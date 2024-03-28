@@ -1,0 +1,54 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+p {font-family: Franklin Gothic Book; color: #0c53d4;}
+</style>
+</head>
+<body bgcolor="#F8F8F8">
+<img src="imagens/cadm.jpg" alt="Cadastro de Médicos" width="100%">
+<p align="center"><font size="4">Para a tentativa de entrada em nossa </font><font size="4" color="#0404B4">rede de atendimento em consultórios</font><font size="4">, é necessário um cadastro médico com o </font><font size="4" color="#0404B4"><u>CRM válido</u></font>.</BR><font size="4">Após o preenchimento do formulário, </font><font size="4" color="#0404B4">aguarde vosso contato!</br><u>Boa sorte!</u></font></p>
+<form action="david.cgi" method="post">
+    <table align="center" border="1" width="60%" bordercolor="black">
+        <tr><td align="center" colspan="2"><font face="Arial" color="#0404B4"><b>TODOS OS CAMPOS SÃO OBRIGATÓRIOS!</b></font></td></tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Nome Completo:&nbsp;&nbsp;</font></td><td><input type="text" size="45"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Email:&nbsp;&nbsp;</font></td><td><input type="text" size="45"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">CPF:&nbsp;&nbsp;</font></td><td><input type="text" size="1" maxlength="3" name="CPF">.<input type="text" size="1" maxlength="3" name="CPF">.<input type="text" size="1" maxlength="3" name="CPF">-<input type="text" size="1" maxlength="2" name="CPF"></TD>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Sexo:&nbsp;&nbsp;</font></td><td><input type="radio" name="genero" value="masculino"><font color="#0404B4">Masculino</font></br>
+                                                                         <input type="radio" name="genero" value="feminino"><font color="#0404B4">Feminino</font></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">CRM:&nbsp;&nbsp;</font></td><td><input type="text" size="15" maxlength="12"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Telefones:&nbsp;&nbsp;</font></td><td><font color="#0404B4">Fixo: <input type="text" size="1" maxlength="2" name="fixo"> <input type="text" size="6" maxlength="8" name="fixo"> Celular: </font><input type="text" size="1" maxlength="2" name="celular"> <input type="text" size="6" maxlength="8" name="celular"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Login:&nbsp;&nbsp;</font></td><td><input type="text" size="12" maxlength="12"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Senha:&nbsp;&nbsp;</font></td><td><input type="password" size="12" maxlength="10"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Confirme a Senha:&nbsp;&nbsp;</font></td><td><input type="password" size="12" maxlength="10"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Por que gostaria de trabalhar na MedicalAgency ?&nbsp;&nbsp;</font></td><td><textarea name="observações" rows="5" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><center></br>
+            <button type="submit"><img src="imagens/certo.jpg" alt="certo">&nbsp;&nbsp;Enviar Dados!</button>&nbsp;
+            <button type="reset"><img src="imagens/errado.jpg" alt="errado">&nbsp;&nbsp;Corrigir Dados!</button>
+        </center></td>
+
+    </table>
+    </form>
+</body>
+</head>

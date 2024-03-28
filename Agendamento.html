@@ -1,0 +1,212 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: none;
+   p {font-family: Franklin Gothic Book; color: #0c53d4;}
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: blue;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<style type="text/css">
+p {font-family: Franklin Gothic Book; color: #0c53d4;}
+</style>
+</head>
+<body bgcolor="#F8F8F8">
+<img src="imagens/agende.jpg" alt="Agende aqui" width="100%">
+<p align="center"><font size="4">Para </font><font size="4" color="#0404B4">realizar um agendamento</font><font size="4">, é necessário realizar um cadastro como paciente! Caso já tenha.</font></br><font size="4" color="#0404B4"><u> Preencha o formulário abaixo:</u></font></p>
+<form action="david.cgi" method="post">
+    <table align="center" border="1" width="60%" bordercolor="black">
+        <tr><td align="center" colspan="2"><font face="Arial" color="#0404B4"><b>TODOS OS CAMPOS SÃO OBRIGATÓRIOS!</b></font></td></tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Tipo de Agendamento:&nbsp;&nbsp;</font></td><td><input type="radio" name="tage"><font color="#0404B4">Consulta</font>
+                                                                                                    <input type="radio" name="tage"><font color="#0404B4">Retorno</font>
+                                                                                                    <input type="radio" name="tage"><font color="#0404B4">Encaixe</font></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Paciente:&nbsp;&nbsp;</font></td><td><input type="text"></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Convênio:&nbsp;&nbsp;</font></td><td><input type="radio" name="convenio"><font color="#0404B4">Sim</font>
+                                                                                         <input type="radio" name="convenio"><font color="#0404B4">Não</font></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Caso possuir convênio. Qual ?&nbsp;&nbsp;</font></td><td><input type="text">
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Especialidade:&nbsp;&nbsp;</font></td><td><input type="radio" name="especialidade"><font color="#0404B4">Clínica Geral</font></br>
+                                                                                              <input type="radio" name="especialidade"><font color="#0404B4">Dermatologia</font></br>
+                                                                                              <input type="radio" name="especialidade"><font color="#0404B4">Odontologia</font></br>
+                                                                                              <input type="radio" name="especialidade"><font color="#0404B4">Ginecologia</font></td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Médico:&nbsp;&nbsp;</font></td><td><div class="navbar"> <div class="dropdown">
+    <select class="dropbtn">Medicos 
+      <i class="fa fa-caret-down"></i>
+    
+    <div class="dropdown-content">
+      <option value="Dr. Davis"> Dr. David </option>	
+      <option value="Dr. Carlos"> Dr. Carlos </option>
+      <option value="Dr. Bruno"> Dr. Bruno </option>
+</div>
+	</div>
+	</td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Data de Agendamento:&nbsp;&nbsp;</font></td><td><div class="navbar"> <div class="dropdown">
+    <select class="dropbtn">Dia
+      <i class="fa fa-caret-down"></i>
+    
+    <div class="dropdown-content">
+      <option value="01"> 01 </option>
+      <option value="02"> 02 </option>
+      <option value="03"> 03 </option>
+	  <option value="04"> 04 </option>
+      <option value="05"> 05 </option>
+      <option value="06"> 06 </option>
+	  <option value="07"> 07 </option>
+      <option value="08"> 08 </option>
+      <option value="09"> 09 </option>
+	  <option value="10"> 10 </option>
+      <option value="11"> 11 </option>
+      <option value="12"> 12 </option>
+	  <option value="13"> 13 </option>
+      <option value="14"> 14 </option>
+      <option value="15"> 15 </option>
+	  <option value="16"> 16 </option>
+      <option value="17"> 17 </option>
+      <option value="18"> 18 </option>
+	  <option value="19"> 19 </option>
+      <option value="20"> 20 </option>
+      <option value="21"> 21 </option>
+	  <option value="22"> 22 </option>
+      <option value="23"> 23 </option>
+      <option value="24"> 24 </option>
+	  <option value="25"> 25 </option>
+      <option value="26"> 26 </option>
+      <option value="27"> 27 </option>
+	  <option value="28"> 28 </option>
+      <option value="29"> 29 </option>
+      <option value="30"> 30 </option>
+	  <option value="31"> 31 </option>
+	  </div>
+	  </div> </select> 
+	  <div class="navbar"> <div class="dropdown">
+    <select class="dropbtn"> Mês 
+      <i class="fa fa-caret-down"></i>
+    
+    <div class="dropdown-content">
+      <option value="Janeiro"> Janeiro </option> 
+      <option value="Fevereiro"> Fevereiro </option>
+      <option value="Março"> Março </option>
+	  <option value="Abril"> Abril </option> 
+      <option value="Maio"> Maio </option>
+      <option value="Junho"> Junho </option>
+	  <option value="Julho">Julho </option>
+      <option value="Agosto"> Agosto </option>
+      <option value="Setembro"> Setembro </option>
+	  <option value="Outubro"> Outubro </option>
+      <option value="Novembro"> Novembro </option>
+      <option value="Dezembro"> Dezembro </option>
+	  </div>
+	  </div>
+	  </div>
+	  </select>
+	  <div class="navbar"> <div class="dropdown">
+    <button class="dropbtn"> 2018
+	</div>
+	</div>
+	</td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Horário:&nbsp;&nbsp;</font></td><td><div class="navbar"> <div class="dropdown">
+    <select class="dropbtn">Horarios 
+      <i class="fa fa-caret-down"></i>
+   
+    <div class="dropdown-content">
+      <option value="08:00"> 08:00 </option>
+      <option value="09:00"> 09:00 </option>
+      <option value="10:00"> 10:00 </option>
+	  <option value="11:00"> 11:00 </option>
+      <option value="12:00"> 12:00 </option>
+      <option value="13:00"> 13:00 </option>
+	  <option value="14:00"> 14:00 </option>
+      <option value="15:00"> 15:00 </option>
+      <option value="16:00"> 16:00 </option>
+	  <option value="17:00"> 17:00 </option>
+      <option value="18:00"> 18:00 </option>
+      <option value="19:00"> 19:00 </option>
+		</div>
+		</div>
+		</div>
+		</td>
+        </tr>
+        <tr>
+            <td align="right"><font color="#0c53d4">Observações:&nbsp;&nbsp;</font></td><td><textarea name="observações" rows="5" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><center></br>
+            <button type="submit"><img src="imagens/certo.jpg" alt="certo">&nbsp;&nbsp;Enviar Dados!</button>&nbsp;
+            <button type="reset"><img src="imagens/errado.jpg" alt="errado">&nbsp;&nbsp;Corrigir Dados!</button>
+        </center></td>
+
+    </table>
+    </form>
+</body>
+</head>
